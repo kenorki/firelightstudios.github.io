@@ -293,27 +293,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    var $root = $('html, body');
 
-    $('a[href^="#"]').click(function () {
-      $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-      }, 500);
-      return false;
-    });
-
-    $('.answer').on('show.bs.collapse', function() {
-      $(this).parents('.question').siblings('.fa-caret-right').css({'transform':'rotate(90deg)','color':'#F06B4B'});
-      $(this).siblings('a').css('color', '#F06B4B');
-    });
-    $('.answer').on('hide.bs.collapse', function() {
-      $(this).parents('.question').siblings('.fa-caret-right').css({'transform':'none','color':'#000000'});
-      $(this).siblings('a').css('color', '#1a1a1a');
-    });
-  });
-  </script>
 </body>
 
 </html>
